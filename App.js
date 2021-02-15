@@ -5,6 +5,8 @@ import IndexScreen from './src/screens/IndexScreen';
 import { DataProvider } from './src/context/DataContext';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import LoadingScreen from './src/screens/loadingScreen';
+import TestScreen from './src/screens/test';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -33,7 +35,7 @@ const App = () => {
       >
         <Tab.Screen
           name="Home"
-          component={IndexScreen}
+          component={TestScreen}
           options={{
             headerShown: false,
           }}
